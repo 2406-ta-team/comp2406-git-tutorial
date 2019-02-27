@@ -45,6 +45,7 @@ In this tutorial you will fork a **Github Repository** and work on the project w
 ---
 
 ## Instructions:
+
 - You will need to form teams of **2 to 4** people.
 ---
 
@@ -52,17 +53,15 @@ In this tutorial you will fork a **Github Repository** and work on the project w
 - Sign into [Github](https://github.com/OmarG247/comp2406-git-tutorial-base-code)
 - Visit https://github.com/2406-ta-team/comp2406-git-tutorial-base-code-FORK-ME and fork the repository by clicking on the fork button
 
-**IMAGE TAG HERE**
+![fork_me.jpeg](images/fork_me.jpeg)
 
 # Add other collaborators (Max 4 people)
-
-**IMAGE TAG HERE**
 
 Head to your projects' settings
 
 Click on the Collaborators tab on the left hand bar and then enter the GitHub usernames of your team members.
 
-**IMAGE TAG HERE**
+![add_collabs.jpeg](images/add_collabs.jpeg)
 
 # Clone the repository locally
 
@@ -79,17 +78,30 @@ Each branch **MUST** have a unique name
 cd comp2406-git-tutorial-base-code
 git checkout -b [NAME OF BRANCH]
 ```
+
+> Maybe add examples of running the commands
+
 Specifying the `-b` flag on the `git checkout` command specifies *git* to create a new branch if it doesn't exist
 
 We can also switch branches by using the following command `git checkout [NAME OF BRANCH]`
 
 # Modify different sections of the Base Code 
 
-Each person should now modify the `index.jade` file and change the text from
+Each person should **INDIVIDUALLY** modify the `index.jade` file (in the `views` folder) and change the text from
 ```
 Congrats! Now go back to the tutorial
 ```
-to something else
+to something else (keep it unique, everyone should have different text)
+
+For example, your file should look something like this after
+`index.jade`
+```jade
+extends layout
+
+block content
+  h1= title
+  p COMP 2406 is the best course!
+```
 
 # Pushing code changes
 Note that since we are using different branches, we will need to use a slightly modified command to push
@@ -101,21 +113,23 @@ git add -A
 git commit -m "[SOME USEFUL COMIT MESSAGE]"
 git push origin [NAME OF BRANCH]
 ```
+
+> Maybe add examples here of running the command
+
 We need to specify the `origin` location on this push because git will automatically name the *remote* (that exist on *github*) *origin*
 
 Now on Github you should see all of the team members branches under the branch tab.
 
-**IMAGE TAG HERE for showing branches**
+The TA may request you to show them the branches on Github.
+
+![branches.jpeg](images/branches.jpeg)
 
 # Merge branches by creating a pull request (One per branch)
 
 After having succesfully pushed all the different branches onto GiHub, we will create a pull request per branch.
 
 Each team member must follow the following steps to create a pull request: 
-  - On your main GitHub repository page, click on the branches button and then select your own branch.
-  - **IMAGE TAG HERE**  
-  - After having succesfully switched into your own branch, the option to create a pull request should show up.
-  - **IMAGE TAG HERE**
+- Select the `Compare & pull request
 
 # Dealing with Merge conflicts 
 
