@@ -9,9 +9,9 @@ Revisions:
 
 - [COMP 2406 - Winter 2019 Going into depth with Git](#comp-2406---winter-2019-going-into-depth-with-git)
   - [Introduction to Git features such as branches, pull requests & merge conflicts.](#introduction-to-git-features-such-as-branches-pull-requests--merge-conflicts)
-  - [Description:](#description)
+  - [Description](#description)
   - [Overview](#overview)
-  - [Instructions:](#instructions)
+  - [Instructions](#instructions)
 - [Step 1, Fork the given GitHub base code repository into your own repository](#step-1-fork-the-given-github-base-code-repository-into-your-own-repository)
 - [Step 2, Add other collaborators (Max 4 people)](#step-2-add-other-collaborators-max-4-people)
 - [Step 3, Clone the repository locally](#step-3-clone-the-repository-locally)
@@ -21,13 +21,14 @@ Revisions:
 - [Step 6 Merge branches by creating a pull request (One per branch)](#step-6-merge-branches-by-creating-a-pull-request-one-per-branch)
 - [Step 7,](#step-7)
 - [Step 8, Create a pull request and resolving the merge conflicts](#step-8-create-a-pull-request-and-resolving-the-merge-conflicts)
-- [Liveshares](#liveshares)
+- [Suggested Exercises](#suggested-exercises)
+  - [(Optional) Liveshares](#optional-liveshares)
   - [VSCode Liveshare](#vscode-liveshare)
   - [Atom Liveshare](#atom-liveshare)
 
 ---
 
-## Description:
+## Description
 
 The purpose of this tutorial is for you and a team of at least 1 other student with work with a given Git repository, make some modifications and deal with some of the most common features such as creating a working branch, pull requests and dealing with merge conflicts.
 
@@ -40,11 +41,12 @@ Tutorial grading: 0, 1, or 2 marks. 0 marks for no show or no progress. 1 mark f
 ---
 
 ## Overview
+
 In this tutorial you will fork a **Github Repository** and work on the project with other students.
 
 ---
 
-## Instructions:
+## Instructions
 
 - You will need to form teams of **2 to 4** people.
 
@@ -71,12 +73,16 @@ Click on the Collaborators tab on the left hand bar and then enter the GitHub us
 Navigate to your GitHub projects folder using your terminal
 
 Get the URL for the forked repository under the green `Clone or Download` button
+
 ```sh
 git clone [URL]
 ```
+
 # Step 4, Generate branches (One per team member)
+
 Create seperate for each team member within the folder
 Each branch **MUST** have a unique name
+
 ```sh
 cd comp2406-git-tutorial-base-code
 git checkout -b [NAME OF BRANCH]
@@ -150,7 +156,9 @@ Each team member must follow the following steps to create a pull request:
 - Person 4 does:
   - D 
 
-# Liveshares
+# Suggested Exercises
+
+## (Optional) Liveshares
 
 If you chose to work with a partner during the assignments, you may find it useful to work on it simultaneously. This is where liveshares are handy. They are essentially a google docs for coding
 
