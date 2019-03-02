@@ -12,15 +12,15 @@ Revisions:
   - [Description:](#description)
   - [Overview](#overview)
   - [Instructions:](#instructions)
-  - [- You will need to form teams of **2 to 4** people.](#you-will-need-to-form-teams-of-2-to-4-people)
-- [Fork the given GitHub base code repository into your own repository](#fork-the-given-github-base-code-repository-into-your-own-repository)
-- [Add other collaborators (Max 4 people)](#add-other-collaborators-max-4-people)
-- [Clone the repository locally](#clone-the-repository-locally)
-- [Generate branches (One per team member)](#generate-branches-one-per-team-member)
-- [Modify different sections of the Base Code](#modify-different-sections-of-the-base-code)
-- [Pushing code changes](#pushing-code-changes)
-- [Merge branches by creating a pull request (One per branch)](#merge-branches-by-creating-a-pull-request-one-per-branch)
-- [Dealing with Merge conflicts](#dealing-with-merge-conflicts)
+- [Step 1, Fork the given GitHub base code repository into your own repository](#step-1-fork-the-given-github-base-code-repository-into-your-own-repository)
+- [Step 2, Add other collaborators (Max 4 people)](#step-2-add-other-collaborators-max-4-people)
+- [Step 3, Clone the repository locally](#step-3-clone-the-repository-locally)
+- [Step 4, Generate branches (One per team member)](#step-4-generate-branches-one-per-team-member)
+- [Step 5, Modify different sections of the Base Code](#step-5-modify-different-sections-of-the-base-code)
+  - [Pushing code changes](#pushing-code-changes)
+- [Step 6 Merge branches by creating a pull request (One per branch)](#step-6-merge-branches-by-creating-a-pull-request-one-per-branch)
+- [Step 7,](#step-7)
+- [Step 8, Create a pull request and resolving the merge conflicts](#step-8-create-a-pull-request-and-resolving-the-merge-conflicts)
 - [Liveshares](#liveshares)
   - [VSCode Liveshare](#vscode-liveshare)
   - [Atom Liveshare](#atom-liveshare)
@@ -47,15 +47,18 @@ In this tutorial you will fork a **Github Repository** and work on the project w
 ## Instructions:
 
 - You will need to form teams of **2 to 4** people.
+
 ---
 
-# Fork the given GitHub base code repository into your own repository
+# Step 1, Fork the given GitHub base code repository into your own repository
+
 - Sign into [Github](https://github.com/OmarG247/comp2406-git-tutorial-base-code)
-- Visit https://github.com/2406-ta-team/comp2406-git-tutorial-base-code-FORK-ME and fork the repository by clicking on the fork button
+  
+- One Person visit https://github.com/2406-ta-team/comp2406-git-tutorial-base-code-FORK-ME and fork the repository by clicking on the fork button
 
 ![fork_me.jpeg](images/fork_me.jpeg)
 
-# Add other collaborators (Max 4 people)
+# Step 2, Add other collaborators (Max 4 people)
 
 Head to your projects' settings
 
@@ -63,7 +66,7 @@ Click on the Collaborators tab on the left hand bar and then enter the GitHub us
 
 ![add_collabs.jpeg](images/add_collabs.jpeg)
 
-# Clone the repository locally
+# Step 3, Clone the repository locally
 
 Navigate to your GitHub projects folder using your terminal
 
@@ -71,7 +74,7 @@ Get the URL for the forked repository under the green `Clone or Download` button
 ```sh
 git clone [URL]
 ```
-# Generate branches (One per team member)
+# Step 4, Generate branches (One per team member)
 Create seperate for each team member within the folder
 Each branch **MUST** have a unique name
 ```sh
@@ -85,7 +88,7 @@ Specifying the `-b` flag on the `git checkout` command specifies *git* to create
 
 We can also switch branches by using the following command `git checkout [NAME OF BRANCH]`
 
-# Modify different sections of the Base Code 
+# Step 5, Modify different sections of the Base Code 
 
 Each person should **INDIVIDUALLY** modify the `index.jade` file (in the `views` folder) and change the text from
 ```
@@ -103,7 +106,8 @@ block content
   p COMP 2406 is the best course!
 ```
 
-# Pushing code changes
+##  Pushing code changes
+
 Note that since we are using different branches, we will need to use a slightly modified command to push
 
 Each person will have to push their code changes to their respective branches using the following commands (replacing `[STUFF]` with the approrpiate text)
@@ -124,14 +128,18 @@ The TA may request you to show them the branches on Github.
 
 ![branches.jpeg](images/branches.jpeg)
 
-# Merge branches by creating a pull request (One per branch)
+# Step 6 Merge branches by creating a pull request (One per branch)
 
 After having succesfully pushed all the different branches onto GiHub, we will create a pull request per branch.
 
 Each team member must follow the following steps to create a pull request: 
-- Select the `Compare & pull request
+- Select the `Compare & pull request`
 
-# Dealing with Merge conflicts 
+# Step 7, 
+
+
+
+# Step 8, Create a pull request and resolving the merge conflicts
 
 - Person 1 does:
   - A
