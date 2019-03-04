@@ -58,7 +58,7 @@ In this tutorial you will fork a **Github Repository** and work on the project w
   
 - One Person visit https://github.com/2406-ta-team/comp2406-git-tutorial-base-code-FORK-ME and fork the repository by clicking on the fork button
 
-![fork_me.jpeg](images/fork_me.jpeg)
+![fork.png](images/fork.png)
 
 # Step 2, Add other collaborators (Max 4 people)
 
@@ -66,7 +66,7 @@ Head to your projects' settings
 
 Click on the Collaborators tab on the left hand bar and then enter the GitHub usernames of your team members.
 
-![add_collabs.jpeg](images/add_collabs.jpeg)
+![add_collabs.png](images/add_collabs.png)
 
 # Step 3, Clone the repository locally
 
@@ -132,7 +132,7 @@ Now on Github you should see all of the team members branches under the branch t
 
 The TA may request you to show them the branches on Github.
 
-![branches.jpeg](images/branches.jpeg)
+![branches.png](images/branches.png)
 
 # Step 6 Merge branches by creating a pull request (One per branch)
 
