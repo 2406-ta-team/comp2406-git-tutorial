@@ -56,9 +56,11 @@ In this tutorial you will fork a **Github Repository** and work on the project w
 
 - Sign into [Github](https://github.com/OmarG247/comp2406-git-tutorial-base-code)
   
-- One Person visit https://github.com/2406-ta-team/comp2406-git-tutorial-base-code-FORK-ME and fork the repository by clicking on the fork button
+- **ONLY One** Person visit https://github.com/2406-ta-team/comp2406-git-tutorial-base-code-FORK-ME and fork the repository by clicking on the fork button
 
 ![fork.png](images/fork.png)
+
+Forking will create a copy of the repository into your own Github account so that you can modify the code and then later on create a pull request back into the original *repository*.
 
 # Step 2, Add other collaborators (Max 4 people)
 
@@ -74,9 +76,13 @@ Navigate to your GitHub projects folder using your terminal
 
 Get the URL for the forked repository under the green `Clone or Download` button
 
+Then on your local terminal run the command (replacing `[URL]` with the URL from your github repository)
+
 ```sh
 git clone [URL]
 ```
+
+For example `git clone git@github.com:LouDNel/comp2406-git-tutorial-base-code-FORK-ME.git`
 
 # Step 4, Generate branches (One per team member)
 
@@ -88,7 +94,7 @@ cd comp2406-git-tutorial-base-code
 git checkout -b [NAME OF BRANCH]
 ```
 
-> Maybe add examples of running the commands
+When we run the `git clone` command, a new folder will be automatically created with the **name** of the repository
 
 Specifying the `-b` flag on the `git checkout` command specifies *git* to create a new branch if it doesn't exist
 
