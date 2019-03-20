@@ -6,6 +6,9 @@
 
 ---
 
+
+# Part A
+
 ## 1 Fork the given repository
 
 ---
@@ -22,18 +25,38 @@
 
 ---
 
-## 5 Modify base code 
+# Part B
+
+## 1 Modify base code 
 
 ---
 
-## 6 and pull requests occur succesfully 
+## 2 Pushing Code Changes
 
 ---
 
-## 7 Modify base code 
+## 3 Pull requests occur succesfully 
 
 ---
 
-## 8 pull requests + Merge conflicts 
+# Part C
+
+## 1 Pull all changes
+
+---
+
+## 2 Modify base code 
+
+---
+
+## 3 Pushing Code Changes
+
+---
+
+## 4 pull requests
+
+---
+
+## 5 Merge conflicts 
 
 ---

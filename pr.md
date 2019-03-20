@@ -11,7 +11,7 @@
 - [ ] Create a new branch with your own name (checkout new branch)
 - [ ] Modify the file `index.jade`
 - [ ] `git add, commit, push`
-- [ ] Create a PR (on github or locally)
+- [ ] Create a PR (on github)
 - [ ] **Attempt** to merge the PR into the master branch
 - [ ] Resolve the merge conflicts (one person at a time)
 - [ ] After resolving the merge conflict, delete the branch (GitHub & locally)

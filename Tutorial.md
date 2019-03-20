@@ -6,21 +6,26 @@
 Revisions:
 
 ---
-
 - [COMP 2406 - Winter 2019 Going into depth with Git](#comp-2406---winter-2019-going-into-depth-with-git)
   - [Introduction to Git features such as branches, pull requests & merge conflicts.](#introduction-to-git-features-such-as-branches-pull-requests--merge-conflicts)
   - [Description](#description)
   - [Overview](#overview)
   - [Instructions](#instructions)
-- [Step 1, Fork the given GitHub base code repository into your own repository](#step-1-fork-the-given-github-base-code-repository-into-your-own-repository)
-- [Step 2, Add other collaborators (Max 4 people)](#step-2-add-other-collaborators-max-4-people)
-- [Step 3, Clone the repository locally](#step-3-clone-the-repository-locally)
-- [Step 4, Generate branches (One per team member)](#step-4-generate-branches-one-per-team-member)
-- [Step 5, Modify different sections of the Base Code](#step-5-modify-different-sections-of-the-base-code)
-  - [Pushing code changes](#pushing-code-changes)
-- [Step 6 Merge branches by creating a pull request (One per branch)](#step-6-merge-branches-by-creating-a-pull-request-one-per-branch)
-- [Step 7,](#step-7)
-- [Step 8, Create a pull request and resolving the merge conflicts](#step-8-create-a-pull-request-and-resolving-the-merge-conflicts)
+- [Part A - Setup](#part-a---setup)
+  - [Step 1, Fork the given GitHub base code repository into your own repository](#step-1-fork-the-given-github-base-code-repository-into-your-own-repository)
+  - [Step 2, Add other collaborators (Max 4 people)](#step-2-add-other-collaborators-max-4-people)
+  - [Step 3, Clone the repository locally](#step-3-clone-the-repository-locally)
+  - [Step 4, Generate branches (One per team member)](#step-4-generate-branches-one-per-team-member)
+- [Part B - Creating a Page and Pushing it using a Pull Request](#part-b---creating-a-page-and-pushing-it-using-a-pull-request)
+  - [Step 1, Create individual pages](#step-1-create-individual-pages)
+  - [Step 2, Pushing code changes](#step-2-pushing-code-changes)
+  - [Step 3 Merge branches by creating a pull request (One per branch)](#step-3-merge-branches-by-creating-a-pull-request-one-per-branch)
+- [Part C - Merge Conflicts (modifying `index.jade`)](#part-c---merge-conflicts-modifying-indexjade)
+  - [Step 1, Pull the changes from Part B](#step-1-pull-the-changes-from-part-b)
+  - [Step 2, make the following changes to the base code depending on the size of your team](#step-2-make-the-following-changes-to-the-base-code-depending-on-the-size-of-your-team)
+  - [Step 3, Create a pull request and resolving the merge conflicts](#step-3-create-a-pull-request-and-resolving-the-merge-conflicts)
+  - [Step 4, Pushing code changes](#step-4-pushing-code-changes)
+  - [Step 5, Dealing with Merge Conflicts Note: **All team members must follow each step, one member at a time.**](#step-5-dealing-with-merge-conflicts-note-all-team-members-must-follow-each-step-one-member-at-a-time)
 - [Suggested Exercises](#suggested-exercises)
   - [(Optional) Liveshares](#optional-liveshares)
   - [VSCode Liveshare](#vscode-liveshare)
@@ -48,64 +53,162 @@ In this tutorial you will fork a **Github Repository** and work on the project w
 
 ## Instructions
 
+- This tutorial will require you to **already** have set up your ssh key with your github account. If you haven't finished such requirement, **you must complete part 2 of Tutorial 6.**
+
 - You will need to form teams of **2 to 4** people.
 
 ---
 
-# Step 1, Fork the given GitHub base code repository into your own repository
+# Part A - Setup
+## Step 1, Fork the given GitHub base code repository into your own repository
 
-- Sign into [Github](https://github.com/OmarG247/comp2406-git-tutorial-base-code)
+Sign into [https://github.com/OmarG247/comp2406-git-tutorial-base-code](https://github.com/OmarG247/comp2406-git-tutorial-base-code)
   
-- **ONLY One** Person visit https://github.com/2406-ta-team/comp2406-git-tutorial-base-code-FORK-ME and fork the repository by clicking on the fork button
+One team member must visit https://github.com/2406-ta-team/comp2406-git-tutorial-base-code-FORK-ME and fork the repository by clicking on the fork button
 
-![fork.png](images/fork.png)
+![fork_me.jpeg](images/fork.png)
 
-Forking will create a copy of the repository into your own Github account so that you can modify the code and then later on create a pull request back into the original *repository*.
+## Step 2, Add other collaborators (Max 4 people)
 
-# Step 2, Add other collaborators (Max 4 people)
+**Note: only one person needs to add all the collaborators**
 
 Head to your projects' settings
 
-Click on the Collaborators tab on the left hand bar and then enter the GitHub usernames of your team members.
+Click on the Collaborators tab on the left hand bar and then enter the GitHub usernames of your team members. Click on 'Add Collaborator' once the correct username is selected.
 
-![add_collabs.png](images/add_collabs.png)
+![add_collabs.jpeg](images/add_collabs.png)
 
-# Step 3, Clone the repository locally
+## Step 3, Clone the repository locally
+**Note: Everyone in the team must perform the following steps individually**
 
-Navigate to your GitHub projects folder using your terminal
+Navigate to your GitHub projects folder using your *terminal*
 
 Get the URL for the forked repository under the green `Clone or Download` button
 
-Then on your local terminal run the command (replacing `[URL]` with the URL from your github repository)
-
 ```sh
-git clone [URL]
+git clone <URL>
 ```
 
-For example `git clone git@github.com:LouDNel/comp2406-git-tutorial-base-code-FORK-ME.git`
+## Step 4, Generate branches (One per team member)
 
-# Step 4, Generate branches (One per team member)
-
-Create seperate for each team member within the folder
-Each branch **MUST** have a unique name
+Create seperate for branches for each team member within the folder,
+ach branch **MUST** have a unique name
 
 ```sh
 cd comp2406-git-tutorial-base-code
-git checkout -b [NAME OF BRANCH]
+git checkout -b <NAME OF YOUR BRANCH>
+```
+> *Example*
+> ```
+> git checkout -b louDNel
+> ```
+
+> *Notes*:
+> 
+> Specifying the `-b` flag on the `git checkout` command specifies *git* to create a new branch if it doesn't exist
+> 
+> We can also switch branches by using the following command `git checkout [NAME OF YOUR BRANCH]`
+> 
+> Branches are case sensitive
+
+![branches.jpeg](images/branches.png)
+
+
+# Part B - Creating a Page and Pushing it using a Pull Request
+## Step 1, Create individual pages
+
+Each tem member must create their own page with the filename `LouDNel.jade` (changing LouDNel to your name) inside of `/views` folder with the following contents (changing `Lou D Nel` with your name)
+
+*Example*
+`/views/LouDNel.jade`
+```
+extends layout
+
+block content
+  h1= title
+  p Hi! My name is Lou D Nel
 ```
 
-When we run the `git clone` command, a new folder will be automatically created with the **name** of the repository
+After creating the pages we must track them and add them to the origin repository by following the next steps.
 
-Specifying the `-b` flag on the `git checkout` command specifies *git* to create a new branch if it doesn't exist
+---
 
-We can also switch branches by using the following command `git checkout [NAME OF BRANCH]`
+## Step 2, Pushing code changes
 
-# Step 5, Modify different sections of the Base Code 
+Note that since we are using different branches, we will need to use a slightly modified command to push
+
+Each person will have to push their code changes to their respective branches using the following commands (replacing `[SOME USEFUL COMMIT MESSAGE]` with the approrpiate text)
+
+```sh
+git add -A 
+git commit -m "SOME USEFUL COMMIT MESSAGE"
+git push origin <NAME OF YOUR BRANCH>
+```
+
+> *Example*
+>
+> ```
+> git add -A
+> git commit -m "Added LouDNel's personal Page"
+> git push origin louDNel
+> ``` 
+
+> *Notes*
+> 
+> We need to specify the `origin` location on this push because git will automatically name the *remote* (that exist on *github*) *origin*
+
+Now on Github you should see all of the team members branches under the branch tab.
+
+The TA may request you to show them the branches on Github.
+
+---
+
+## Step 3 Merge branches by creating a pull request (One per branch)
+
+After having succesfully pushed all the different branches onto GiHub, we will create a pull request per branch.
+
+Each team member must follow the following steps to create a pull request: 
+- Select the `Compare & Pull Request`
+
+![images/create_pull_request_pA.jpeg](images/create_pull_request_pA.jpeg)
+
+- make sure that the `base: master` branch is selected
+
+![images/compare.png](images/compare.png)
+
+- Select the `Create Pull Request` to create the pull request
+
+> *Note:*
+> 
+> A **pull request** is way for someone to submit a code change to a repository. Instead of pushing directly to the `master` branch it's better to create *pull request* so it doesn't affect the main code immediately.
+
+## Note
+**DO NOT** delete your branch once your pull request was succesfully merged onto the master branch.
+
+---
+
+# Part C - Merge Conflicts (modifying `index.jade`) 
+
+## Step 1, Pull the changes from Part B
+
+You must now pull all the changes that were made into your current branch by entering the following command:
+
+```ssh
+git pull origin <NAME OF YOUR BRANCH>
+```
+
+---
+
+## Step 2, make the following changes to the base code depending on the size of your team
+
+One at a time, each person create a pull request from their branch to the `master` branch
 
 Each person should **INDIVIDUALLY** modify the `index.jade` file (in the `views` folder) and change the text from
+
 ```
 Congrats! Now go back to the tutorial
 ```
+
 to something else (keep it unique, everyone should have different text)
 
 For example, your file should look something like this after
@@ -118,7 +221,11 @@ block content
   p COMP 2406 is the best course!
 ```
 
-##  Pushing code changes
+Each person, one at a time must now add the changes to the repository.
+
+---
+
+## Step 3, Pushing code changes
 
 Note that since we are using different branches, we will need to use a slightly modified command to push
 
@@ -126,41 +233,95 @@ Each person will have to push their code changes to their respective branches us
 
 ```sh
 git add -A 
-git commit -m "[SOME USEFUL COMIT MESSAGE]"
-git push origin [NAME OF BRANCH]
+git commit -m "SOME USEFUL COMIT MESSAGE"
+git push origin <NAME OF YOUR BRANCH>
 ```
 
-> Maybe add examples here of running the command
+> *Example*
+> 
+> ```
+> git add -A
+> git commit -m "Modified tagline on index.jade"
+> git push origin louDNel
+> ```
 
 We need to specify the `origin` location on this push because git will automatically name the *remote* (that exist on *github*) *origin*
 
-Now on Github you should see all of the team members branches under the branch tab.
+---
 
-The TA may request you to show them the branches on Github.
+## Step 4, Create a pull request
 
-![branches.png](images/branches.png)
-
-# Step 6 Merge branches by creating a pull request (One per branch)
-
-After having succesfully pushed all the different branches onto GiHub, we will create a pull request per branch.
+## Note: **All team members must follow each step, one member at a time.**
 
 Each team member must follow the following steps to create a pull request: 
-- Select the `Compare & pull request`
+- Select the `Compare & Pull Request`
 
-# Step 7, 
+![images/create_pull_request_pA.jpeg](images/create_pull_request_pA.jpeg)
+
+> *Note:*
+> 
+> A **pull request** is way for someone to submit a code change to a repository. Instead of pushing directly to the `master` branch it's better to create *pull request* so it doesn't affect the main code immediately.
+
+---
+
+## Step 5, Dealing with Merge Conflicts 
+
+Back on your terminal, we run the following commands to resolve the merge conflict
+```
+git fetch origin
+git checkout master
+git pull
+git checkout <BRANCH NAME>
+git merge master
+```
+
+You will receive the error
+```
+Auto-merging views/index.jade
+CONFLICT (content): Merge conflict in views/index.jade
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+and your `index.jade` should now look like
+```
+extends layout
+
+block content
+  h1= title
+<<<<<<< HEAD
+  p I think Javascript is better than Python
+=======
+  p Python <3
+>>>>>>> master
+```
+
+This is a merge conflict, when two people have modified the same file and we need to combine the code together.
+
+To do so, we will mesh both paragraphs together so by removing the
+`<<<<<<< HEAD`, `=======` and `>>>>>>> master` which are the indicators for merge conflicts.
+
+At the end of it, your file should look something like this
+```
+extends layout
+
+block content
+  h1= title
+  p I think Javascript is better than Python
+  p Python <3
+```
+
+and now we can push the changes to master
 
 
+```
+git add -A
+git commit -m "resolved merge conflicts"
+git push origin <BRANCH NAME>
 
-# Step 8, Create a pull request and resolving the merge conflicts
-
-- Person 1 does:
-  - A
-- Person 2 does:
-  - B
-- Person 3 does:
-  - C
-- Person 4 does:
-  - D 
+git checkout master
+git merge --no-ff <BRANCH NAME> -m "MESSAGE"
+git push origin master
+```
 
 # Suggested Exercises
 
@@ -175,6 +336,5 @@ For this tutorial you can chose either to use VSCode liveshare or Atom (YOU DO N
 
 ## VSCode Liveshare
 Start by installing VSCode.
-
 
 ## Atom Liveshare
