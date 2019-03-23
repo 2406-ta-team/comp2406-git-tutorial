@@ -115,7 +115,6 @@ git checkout -b <NAME OF YOUR BRANCH>
 
 ![branches.jpeg](images/branches.png)
 
-
 # Part B - Creating a Page and Pushing it using a Pull Request
 ## Step 1, Create individual pages
 
@@ -312,7 +311,6 @@ block content
 
 and now we can push the changes to master
 
-
 ```
 git add -A
 git commit -m "resolved merge conflicts"
@@ -332,12 +330,12 @@ If you chose to work with a partner during the assignments, you may find it usef
 For this tutorial you can chose either to use VSCode liveshare or Atom Teletype (YOU DO NOT NEED TO DO BOTH).
 
 - [VSCode Liveshare](#vscode-liveshare)
-- [Atom Liveshare](#atom-liveshare)
+- [Atom Teletype](#atom-liveshare)
 
 These pluggins will allow you and your teammates to have real time collaboration with your code. Imagine being able to convert your current file into a Google sheets like document in which you can have many people typing at once. 
 
 ## VSCode Liveshare
-https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
+[https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 
 ## Atom Teletype
-https://teletype.atom.io/
+[https://teletype.atom.io/](https://teletype.atom.io/)
