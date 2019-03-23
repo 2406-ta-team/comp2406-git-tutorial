@@ -31,7 +31,7 @@ Revisions:
 - [Suggested Exercises](#suggested-exercises)
   - [(Optional) Liveshares](#optional-liveshares)
   - [VSCode Liveshare](#vscode-liveshare)
-  - [Atom Liveshare](#atom-liveshare)
+  - [Atom Teletype](#atom-teletype)
 
 ---
 
@@ -175,8 +175,6 @@ Each team member must follow the following steps to create a pull request:
 ![images/create_pull_request_pA.jpeg](images/create_pull_request_pA.jpeg)
 
 - make sure that the `base: master` branch is selected
-
-![images/compare.png](images/compare.png)
 
 - Select the `Create Pull Request` to create the pull request
 
@@ -331,12 +329,15 @@ git push origin master
 
 If you chose to work with a partner during the assignments, you may find it useful to work on it simultaneously. This is where liveshares are handy. They are essentially a google docs for coding
 
-For this tutorial you can chose either to use VSCode liveshare or Atom (YOU DO NOT NEED TO DO BOTH).
+For this tutorial you can chose either to use VSCode liveshare or Atom Teletype (YOU DO NOT NEED TO DO BOTH).
 
 - [VSCode Liveshare](#vscode-liveshare)
 - [Atom Liveshare](#atom-liveshare)
 
-## VSCode Liveshare
-Start by installing VSCode.
+These pluggins will allow you and your teammates to have real time collaboration with your code. Imagine being able to convert your current file into a Google sheets like document in which you can have many people typing at once. 
 
-## Atom Liveshare
+## VSCode Liveshare
+https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
+
+## Atom Teletype
+https://teletype.atom.io/
