@@ -1,7 +1,7 @@
 # COMP 2406 - Winter 2019 Going into depth with Git
 ## Introduction to Git features such as branches, pull requests & merge conflicts.
 
-© L.D. Nel 2019, Omar Garcia Flores & Jason Le
+© Omar Garcia Flores, Jason Le, & L.D. Nel 2019.
 
 Revisions:
 
@@ -64,9 +64,9 @@ In this tutorial you will fork a **Github Repository** and work on the project w
 # Part A - Setup
 ## Step 1, Fork the given GitHub base code repository into your own repository
 
-Sign into [https://github.com/OmarG247/comp2406-git-tutorial-base-code](https://github.com/OmarG247/comp2406-git-tutorial-base-code)
+Sign into [https://github.com](https://github.com)
   
-One team member must visit https://github.com/2406-ta-team/comp2406-git-tutorial-base-code-FORK-ME and fork the repository by clicking on the fork button
+Only one team member must visit https://github.com/2406-ta-team/comp2406-git-tutorial-base-code-FORK-ME and fork the repository by clicking on the fork button
 
 ![fork_me.jpeg](images/fork.png)
 
