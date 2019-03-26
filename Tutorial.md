@@ -173,7 +173,13 @@ Each team member must follow the following steps to create a pull request:
 
 ![images/create_pull_request_pA.jpeg](images/create_pull_request_pA.jpeg)
 
+- Alternatively, if the `Compare & Pull Request` button do not appear, you can create one by clicking on the 
+
+![images/alternative_pull_request.png](images/alternative_pull_request.png)
+
 - make sure that the `base: master` branch is selected
+
+![images/right_base.png](images/right_base.png)
 
 - Select the `Create Pull Request` to create the pull request
 
@@ -326,8 +332,6 @@ git push origin master
 ## (Optional) Liveshares
 
 If you chose to work with a partner during the assignments, you may find it useful to work on it simultaneously. This is where liveshares are handy. They are essentially a google docs for coding
-
-For this tutorial you can chose either to use VSCode liveshare or Atom Teletype (YOU DO NOT NEED TO DO BOTH).
 
 - [VSCode Liveshare](#vscode-liveshare)
 - [Atom Teletype](#atom-liveshare)
